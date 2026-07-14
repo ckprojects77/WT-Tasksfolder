@@ -1,0 +1,218 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #e8f0fe 0%, #f3e8ff 50%, #fce4ec 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    padding-top: 70px;
+}
+
+/* Navbar */
+#mainNavbar {
+    background: linear-gradient(90deg, #1a237e 0%, #4a148c 100%);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    transition: background 0.3s ease;
+}
+
+#mainNavbar .nav-link:hover,
+#mainNavbar .nav-link:focus {
+    color: #ce93d8 !important;
+}
+
+#mainNavbar .navbar-brand {
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+
+/* Hero section */
+.hero-section {
+    min-height: calc(100vh - 70px);
+}
+
+/* Profile card */
+.profile-card {
+    background: #fff;
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.12),
+        0 4px 16px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.16),
+        0 8px 24px rgba(0, 0, 0, 0.10) !important;
+}
+
+/* Profile image */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #7c4dff;
+    box-shadow: 0 6px 18px rgba(124, 77, 255, 0.35);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover .profile-photo {
+    border-color: #1a237e;
+    box-shadow: 0 6px 20px rgba(26, 35, 126, 0.40);
+}
+
+/* Student name */
+.student-name {
+    font-size: 1.55rem;
+    color: #1a237e;
+    letter-spacing: 0.3px;
+}
+
+/* Student details */
+.detail-list li {
+    font-size: 0.97rem;
+    padding: 4px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.detail-list li:last-child {
+    border-bottom: none;
+}
+
+/* View Profile button */
+.view-btn {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #1a237e, #7c4dff);
+    border: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+    opacity: 0.88;
+    transform: scale(1.03);
+}
+
+/* Section titles */
+.section-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1a237e;
+    letter-spacing: 0.4px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #7c4dff, #ce93d8);
+    border-radius: 2px;
+    margin: 8px auto 0;
+}
+
+/* Academic section */
+.academic-section {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+.academic-section .table thead.table-dark th {
+    background: linear-gradient(90deg, #1a237e, #4a148c);
+    border: none;
+    letter-spacing: 0.3px;
+}
+
+.academic-section .table-hover tbody tr:hover {
+    background-color: #ede7f6 !important;
+}
+
+/* Skills */
+.skills-section {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.skill-badge {
+    font-size: 0.9rem;
+    padding: 0.5em 1.1em;
+    background: linear-gradient(135deg, #1a237e 0%, #7c4dff 100%);
+    color: #fff;
+    letter-spacing: 0.4px;
+    box-shadow: 0 3px 10px rgba(124, 77, 255, 0.30);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 6px 18px rgba(124, 77, 255, 0.45);
+}
+
+/* Contact section */
+.contact-section {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+.contact-card {
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.contact-list li {
+    font-size: 0.97rem;
+    padding: 4px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.contact-list li:last-child {
+    border-bottom: none;
+}
+
+.contact-list a {
+    color: #7c4dff;
+}
+
+.contact-list a:hover {
+    color: #1a237e;
+    text-decoration: underline !important;
+}
+
+/* Footer */
+.footer-section {
+    background: linear-gradient(90deg, #0d0d2b 0%, #1a237e 100%);
+    letter-spacing: 0.3px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .student-name {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.35rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+}
