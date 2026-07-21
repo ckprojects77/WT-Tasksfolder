@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form id="form" onsubmit="return validate()">
+
+  <label>Full Name</label>
+  <input type="text" id="fullName" placeholder="Enter full name" />
+  <span class="err" id="fullNameErr"></span>
+
+  <label>Roll Number</label>
+  <input type="text" id="rollNumber" placeholder="e.g. CS2024001" />
+  <span class="err" id="rollNumberErr"></span>
+
+  <label>Email ID</label>
+  <input type="text" id="email" placeholder="example@mail.com" />
+  <span class="err" id="emailErr"></span>
+
+  <label>Mobile Number</label>
+  <input type="text" id="mobile" placeholder="10-digit number" maxlength="10" />
+  <span class="err" id="mobileErr"></span>
+
+  <label>Password</label>
+  <input type="password" id="password" placeholder="Min 8 characters" />
+  <span class="err" id="passwordErr"></span>
+
+  <label>Confirm Password</label>
+  <input type="password" id="confirmPassword" placeholder="Re-enter password" />
+  <span class="err" id="confirmPasswordErr"></span>
+
+  <label>Gender</label>
+  <div>
+    <input type="radio" name="gender" value="Male" /> Male
+    <input type="radio" name="gender" value="Female" /> Female
+    <input type="radio" name="gender" value="Other" /> Other
+  </div>
+  <span class="err" id="genderErr"></span>
+
+  <label>Department</label>
+  <select id="department">
+    <option value="">-- Select --</option>
+    <option>Computer Science</option>
+    <option>Electronics</option>
+    <option>Mechanical</option>
+    <option>Civil</option>
+    <option>Information Technology</option>
+    <option>Electrical</option>
+    <option>Chemical</option>
+    <option>Others</option>
+  </select>
+  <span class="err" id="departmentErr"></span>
+
+  <label>Date of Birth</label>
+  <input type="date" id="dob" />
+  <span class="err" id="dobErr"></span>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+<div id="success" style="display:none;">
+  <h3>✅ Registration Successful!</h3>
+  <p id="summary"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chaitanya Kumari Challa | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">Chaitanya</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home -->
+<section id="home" class="hero">
+  <img src="https://img.magnific.com/premium-vector/software-developer-vector-illustration-communication-technology-cyber-security_1249867-5464.jpg?semt=ais_hybrid&w=740&q=80" alt="Profile" class="profile-img" />
+  <h1>Hi, I'm <span>Chaitanya Kumari Challa</span></h1>
+  <p>B.Tech IT Student | MERN Stack Developer | Problem Solver</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a B.Tech Information Technology student at Anil Neerukonda Institute of Technology & Sciences .
+    I enjoy building modern web applications using the MERN Stack and solving Data Structures & Algorithms problems.
+    I have solved some LeetCode problems and actively contribute to open source through GirlScript Summer of Code.
+    I'm passionate about frontend development, backend APIs, and continuously learning new technologies.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">HTML & CSS<div class="bar"><div style="width:95%"></div></div></div>
+
+    <div class="skill-card">JavaScript<div class="bar"><div style="width:90%"></div></div></div>
+
+    <div class="skill-card">React.js<div class="bar"><div style="width:90%"></div></div></div>
+
+    <div class="skill-card">Node.js & Express<div class="bar"><div style="width:85%"></div></div></div>
+
+    <div class="skill-card">MongoDB<div class="bar"><div style="width:85%"></div></div></div>
+
+    <div class="skill-card">C++ & DSA<div class="bar"><div style="width:90%"></div></div></div>
+
+    <div class="skill-card">Git & GitHub<div class="bar"><div style="width:90%"></div></div></div>
+
+    <div class="skill-card">SQL<div class="bar"><div style="width:80%"></div></div></div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+    <h3>B.Tech - Information Technology</h3>
+    <p>Anil Neerukonda Institute of Technology & Sciences</p>
+    <p>2024 – 2028</p>
+    <p><strong>CGPA:</strong> 9.20 / 10</p>
+  </div>
+
+  <div class="edu-card">
+    <h3>Intermediate (MPC)</h3>
+    <p>Completed before joining Engineering</p>
+  </div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-light">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>CareerForge AI</h3>
+      <p>
+        A full-stack AI-powered job portal built using the MERN Stack featuring authentication,
+        job listings, recruiter dashboard, company management, and responsive UI.
+      </p>
+
+      <span class="tag">React</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">MongoDB</span>
+      <span class="tag">Express</span>
+    </div>
+
+    <div class="project-card">
+      <h3>AI Mock Interview Platform</h3>
+      <p>
+        AI-powered interview practice platform that generates interview questions,
+        evaluates responses, stores interview history, and provides feedback.
+      </p>
+
+      <span class="tag">MERN</span>
+      <span class="tag">OpenAI</span>
+      <span class="tag">JWT</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Blood Ambulance Management System</h3>
+      <p>
+        MERN application connecting blood donors, blood banks,
+        patients, ambulance drivers, and administrators for emergency requests.
+      </p>
+
+      <span class="tag">React</span>
+      <span class="tag">Express</span>
+      <span class="tag">MongoDB</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+
+    <div class="field">
+      <label>Name</label>
+      <input type="text" id="cName" placeholder="Your name" />
+      <span class="err" id="cNameErr"></span>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input type="text" id="cEmail" placeholder="Your email" />
+      <span class="err" id="cEmailErr"></span>
+    </div>
+
+    <div class="field">
+      <label>Subject</label>
+      <input type="text" id="cSubject" placeholder="Subject (min 5 chars)" />
+      <span class="err" id="cSubjectErr"></span>
+    </div>
+
+    <div class="field">
+      <label>Message</label>
+      <textarea id="cMessage" rows="4" placeholder="Your message (min 20 chars)"></textarea>
+      <span class="err" id="cMessageErr"></span>
+    </div>
+
+    <button type="button" onclick="validateContact()">Send Message</button>
+
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Chaitanya Kumari Challa</p>
+
+  <div class="social">
+    <a href="https://github.com/ckprojects77" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    <a href="https://leetcode.com/u/chaitanya_kumariii/" target="_blank">LeetCode</a>
+    <a href="mailto:yourmail@example.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
